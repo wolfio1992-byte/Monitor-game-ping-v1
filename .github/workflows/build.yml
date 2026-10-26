@@ -24,8 +24,7 @@ jobs:
           pyinstaller --noconsole --onefile game_overlay_ping.py
 
       - name: Upload EXE artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: game_overlay_ping_exe
           path: dist/game_overlay_ping.exe
-          
